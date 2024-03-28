@@ -1,0 +1,101 @@
+body,
+h2,
+h3,
+p,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: monospace;
+  text-align: center;
+  margin-top: -20px;
+  color: red;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+li,
+p {
+  font-family: cursive;
+}
+
+li {
+  color: orangered;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.details-content {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.details-content h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.details-content p {
+  margin-bottom: 5px;
+}
+
+.details-content ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.details-content ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.details-content ul li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+}
+
+.price {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #004fd7;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.column {
+  flex: 100%;
+  padding: 5px;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}

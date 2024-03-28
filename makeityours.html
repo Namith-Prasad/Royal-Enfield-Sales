@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Now Popup</title>
+    <link rel="stylesheet" href="makeityours.css" />
+  </head>
+  <body>
+    <div class="popup-container" id="popupContainer">
+      <div class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Buy Now</h2>
+        <form id="buyNowForm" action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="contact">Contact Number:</label>
+          <input
+            type="tel"
+            id="contact"
+            name="contact"
+            pattern="[0-9]{10}"
+            required
+          />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      window.onload = openPopup;
+
+      function openPopup() {
+        document.getElementById("popupContainer").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popupContainer").style.display = "none";
+      }
+
+      document
+        .getElementById("buyNowForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          closePopup();
+
+          window.location.href = "thankyou.html";
+        });
+    </script>
+  </body>
+</html>

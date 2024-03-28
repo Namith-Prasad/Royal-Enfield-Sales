@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1px;
+  text-align: center;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+nav {
+  background-color: red;
+  padding: 5px; 
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.hero-image {
+  background-image: url("https://www.royalenfield.com/content/dam/royal-enfield/india/home/locate-us/desktop/dealers-home-new.jpg");
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.hero-text {
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: cursive;
+  font-style: oblique;
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.content p {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1px;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 14px;
+  }
+  nav {
+    padding: 5px;
+  }
+  nav a {
+    padding: 5px 10px;
+  }
+  .hero-text {
+    font-size: 20px;
+  }
+  .hero-image {
+    height: 250px;
+  }
+  .content {
+    margin-top: 10px;
+  }
+  .content p {
+    margin-bottom: 10px;
+  }
+  footer {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
