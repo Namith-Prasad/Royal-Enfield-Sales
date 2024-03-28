@@ -50,7 +50,7 @@ nav a:hover {
   font-weight: 100;
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 
@@ -85,7 +85,7 @@ footer {
     padding: 5px 10px;
   }
   .hero-text {
-    font-size: 14px;
+    font-size: 12px;
   }
   .hero-image {
     height: 200px;
