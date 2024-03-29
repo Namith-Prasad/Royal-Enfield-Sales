@@ -45,7 +45,7 @@ nav a:hover {
 .hero-text {
   color: whitesmoke;
   font-size: 25px;
-  font-family: cursive;
+  font-family: monospace;
   font-style: oblique;
   font-weight: 100;
   position: absolute;
@@ -85,7 +85,7 @@ footer {
     padding: 5px 10px;
   }
   .hero-text {
-    font-size: 12px;
+    font-size: 15px;
   }
   .hero-image {
     height: 200px;
